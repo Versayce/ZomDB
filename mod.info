@@ -1,0 +1,6 @@
+name=ZomDB
+id=ZomDB
+description=Mod for tracking player stats using SQLite.
+version=1.0
+type=mod
+serverOnly=true
