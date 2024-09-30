@@ -20,7 +20,8 @@ end
 
 -- Function to write player data to a file
 function writePlayerDataToFile(playerData)
-    local filePath = "/home/pz/Zomboid/Server/mods/ZomDB/player/player_data.json"  -- Adjust this path as necessary
+    -- grab filepath in the .env file
+    local filePath = os.getenv("JSON_DATA_FILEPATH")
     local file, err = io.open(filePath, "w")
 
     if file then
